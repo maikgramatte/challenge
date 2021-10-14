@@ -1,0 +1,26 @@
+
+.buzz {
+  height: 100px;
+  display: flex;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: lightgray;
+  border: 2px transparent solid;
+  transition: .2s all ease-in-out;
+}
+
+.buzz:not(.disabled) {
+  cursor: pointer;
+}
+
+.buzz.selected {
+  background: orange;
+}
+
+.buzz.bingo {
+  background: greenyellow;
+  border-color: green;
+  font-weight: bolder;
+}
